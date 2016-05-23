@@ -1,0 +1,329 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:id="@+id/layout_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    INFO TIME PART   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/ButtonRunning"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:text="@string/ButtonRunning"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_small"
+                />
+
+            <LinearLayout
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="left"
+                android:layout_gravity="center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/StartingTimeRunning"
+                    android:text="@string/StartingTimeRunning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/text"
+                    />
+
+                <TextView
+                    android:id="@+id/DurationTimeRunning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DurationTimeRunning"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/text"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    LMIN, LEQ, LMAX PART   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/background_border"
+            >
+
+            <LinearLayout
+                android:id="@+id/LayoutLMin"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:background="@color/background"
+                >
+
+                <TextView
+                    android:text="@string/LMin_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text"
+                    />
+
+                <TextView
+                    android:id="@+id/LMin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/LMin"
+                    android:textSize="@dimen/text_medium"
+                    android:textColor="@color/text"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LayoutLMax"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_marginLeft="0dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:background="@color/background">
+
+                <TextView
+                    android:text="@string/LMax_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text"
+                    />
+
+                <TextView
+                    android:id="@+id/LMax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/LMax"
+                    android:textSize="@dimen/text_medium"
+                    android:textColor="@color/text"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LayoutLAeqTimeDisplay"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_marginLeft="0dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:background="@color/background">
+
+                <TextView
+                    android:id="@+id/LAeqTimeDisplay_label"
+                    android:text="@string/LAeqTimeDisplay_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text"
+                    />
+
+                <TextView
+                    android:id="@+id/LAeqTimeDisplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/LAeqTimeDisplay"
+                    android:textSize="@dimen/text_medium"
+                    android:textColor="@color/text"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LayoutLAeqRunning"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_marginLeft="0dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:background="@color/background">
+
+                <TextView
+                    android:text="@string/LAeqRunning_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text"
+                    />
+
+                <TextView
+                    android:id="@+id/LAeqRunning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/LAeqRunning"
+                    android:textSize="@dimen/text_medium"
+                    android:textColor="@color/text"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    LEVEL PART   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/level_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/level_label"
+                    android:textSize="@dimen/text_large"
+                    android:textColor="@color/text"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/level_label_dBA"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/text"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/level"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/level"
+                android:textSize="@dimen/text_huge"
+                android:textColor="@color/text"/>
+
+        </LinearLayout>
+
+
+        <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    LOG PART   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/ButtonLog"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="@dimen/text_small"
+                android:textAllCaps="false"
+                />
+
+            <LinearLayout
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="left"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/StartingTimeLog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/StartingTimeLog"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/text"
+                    />
+
+                <TextView
+                    android:id="@+id/DurationTimeLog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DurationTimeLog"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/text"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    PLOT PART   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <it.piemonte.arpa.openoise.PlotFFT
+            android:id="@+id/PlotFFT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <it.piemonte.arpa.openoise.PlotSLM
+            android:id="@+id/PlotSLM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <it.piemonte.arpa.openoise.PlotSLMHistory
+            android:id="@+id/PlotSLMHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <it.piemonte.arpa.openoise.PlotThirdOctave
+            android:id="@+id/PlotThirdOctave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+</LinearLayout>
+
+

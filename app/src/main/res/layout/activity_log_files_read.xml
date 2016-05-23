@@ -1,0 +1,124 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="it.piemonte.arpa.openoise.LogFilesReadActivity"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+
+        >
+
+        <TextView
+            android:id="@+id/logFileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:gravity="center"
+            android:text=""
+            android:textSize="@dimen/text_medium"
+            android:textColor="@color/text"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            >
+            <Button
+                android:id="@+id/ButtonLogFileTop"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:text="@string/ButtonLogFileTop"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_small"
+                />
+            <Button
+                android:id="@+id/ButtonLogFileBottom"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:text="@string/ButtonLogFileBottom"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_small"
+                />
+            <Button
+                android:id="@+id/ButtonLogFileLeft"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:text="@string/ButtonLogFileLeft"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_small"
+                />
+            <Button
+                android:id="@+id/ButtonLogFileRight"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:text="@string/ButtonLogFileRight"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_small"
+                />
+
+        </LinearLayout>
+
+        <!--<Button-->
+            <!--android:id="@+id/ButtonActionLogFilesShare"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="aaaaaaaaaa"-->
+             <!--/>-->
+
+        <ScrollView
+            android:id="@+id/VerticalScrollLogFiles"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:fillViewport="true"
+            android:scrollbarAlwaysDrawVerticalTrack="true">
+
+            <HorizontalScrollView
+                android:id="@+id/HorizontalScrollLogFiles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:scrollbars="horizontal"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:fillViewport="true"
+                >
+
+
+                <TextView
+                    android:id="@+id/logFileText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/text"
+                    android:scrollbars="horizontal"
+                    />
+
+            </HorizontalScrollView>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

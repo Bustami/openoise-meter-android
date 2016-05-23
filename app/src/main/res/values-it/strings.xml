@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">OpeNoise</string>
+
+    <!-- MAIN ACTIVITY STRINGS -->
+    <string name="StartingTimeRunning"></string>
+    <string name="DurationTimeRunning"></string>
+    <string name="ButtonRunning">RESET</string>
+
+    <string name="LMax_label">LAMax</string>
+    <string name="LAeqTimeDisplay_label">LAeq</string>
+    <string name="LMin_label">LAMin</string>
+    <string name="LMax">0</string>
+    <string name="LAeqTimeDisplay">0</string>
+    <string name="LMin">0</string>
+    <string name="LAeqRunning_label">LAeq(t)</string>
+    <string name="LAeqRunning"></string>
+
+    <string name="level">0</string>
+    <string name="level_label"></string>
+    <string name="level_label_dBA">dB(A)</string>
+
+    <string name="StartingTimeLog"></string>
+    <string name="DurationTimeLog"></string>
+    <string name="StartingTimeLogText">Non stai salvando dati</string>
+    <string name="DurationTimeLogText">Campionamento:</string>
+
+    <!-- ACTION BAR STRINGS -->
+    <string name="action_info">Informazioni</string>
+    <string name="action_log_files">Log file</string>
+    <string name="action_settings">Impostazioni</string>
+    <string name="action_credits">Credits</string>
+
+    <!-- SETTINGS ACTIVITY STRINGS -->
+    <string name="title_activity_settings">Impostazioni</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <!-- LOG FILES LIST ACTIVITY STRINGS -->
+    <string name="title_activity_log_files_list">Elenco dei Log file</string>
+
+    <!-- LOG FILES READ ACTIVITY STRINGS -->
+    <string name="title_activity_log_files_read">Lettura del Log file</string>
+    <string name="ButtonLogFileTop">Inizio</string>
+    <string name="ButtonLogFileBottom">Fine</string>
+    <string name="ButtonLogFileLeft">Sinistra</string>
+    <string name="ButtonLogFileRight">Destra</string>
+
+    <!-- INFO ACTIVITY STRINGS -->
+    <string name="title_activity_info">Informazioni</string>
+    <string name="Openoise">OpeNoise</string>
+    <string name="OpenoiseText">OpeNoise consente la misurazione in tempo reale del livello equivalente di pressione sonora ponderato A.\nFunzioni:\n - livello minimo e massimo\n - analisi in terzi di ottava e FFT\n - salvataggio dati in log file\n - scelta tempo di campionamento\n - impostazione di un guadagno
+</string>
+    <string name="TermsOfUse">Condizioni di utilizzo</string>
+    <string name="TermsOfUseText1">Questa app non è progettata per usi professionali in quanto non garantisce una misurazione del rumore sufficientemente accurata.\nPrima di considerare attendibili i valori rilevati è necessario un confronto con un fonometro professionale nel range di livelli di interesse, in quanto ogni apparecchio ha una specifica risposta al rumore.
+\nPer utilizzare i dati acquisiti è necessario avere adeguate conoscenze e competenze tecniche; una misura estemporanea e di breve durata nella maggior parte dei casi può non essere significativa.
+</string>
+    <string name="SetTheGain">Impostare il Guadagno</string>
+    <string name="SetTheGainText">L\'impostazione del Guadagno è necessaria per un utilizzo corretto della app. Per impostare il Guadagno occorre verificare il livello sonoro misurato con un valore noto.\nL\'impostazione del Guadagno viene persa dopo ogni aggiornamento della app (e reimpostato al valore iniziale 0 dB).
+</string>
+    <string name="InfoLog">Log file</string>
+    <string name="InfoLogText">L\'applicazione può salvare i dati misurati in un log file.
+\nUtilizzare il pulsante \'START LOG\' per iniziare il salvataggio dei dati.
+\nI file vengono salvati nella cartella \'openoise\' della memoria locale (non nella SD esterna).
+\n\n
+</string>
+
+    <!-- CREDITS ACTIVITY STRINGS -->
+    <string name="title_activity_credits">Credits</string>
+    <string name="CreditsOpenoise">OpeNoise</string>
+    <string name="CreditsOpenoiseText">Versione 1.0 - Giugno 2016\nGNU General Public License v.2 o superiori</string>
+    <string name="CreditsDevelopers">Sviluppatori</string>
+    <string name="CreditsDevelopersText1">Arpa Piemonte\n(Agenzia Regionale per la Protezione Ambientale)\nItalia\n<a href="https://www.arpa.piemonte.it/">www.arpa.piemonte.it</a></string>
+    <string name="CreditsDevelopersText2">Istituto Superiore Mario Boella\nItalia\n<a href="https://www.ismb.it/">www.ismb.it</a></string>
+    <string name="CreditsContacts">Contatti</string>
+    <string name="CreditsContactsText">openoise@arpa.piemonte.it\n\n</string>
+</resources>

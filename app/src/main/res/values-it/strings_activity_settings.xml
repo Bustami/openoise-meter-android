@@ -1,0 +1,122 @@
+<resources>
+
+    <string name="pref_category_noise_meter">Noise Meter</string>
+
+        <string name="setting_sample_rate_title">*Sample rate</string>
+        <string name="setting_sample_rate_summary">Tempo di registrazione del display</string>
+        <string-array name="setting_sample_rate_list_titles">
+            <item>44100 Hz</item>
+            <item>48000 Hz</item>
+        </string-array>
+        <string-array name="setting_sample_rate_list_values">
+            <item>44100</item>
+            <item>48000</item>
+        </string-array>
+
+        <string name="setting_fft_rate_title">*FFT samples</string>
+        <string name="setting_fft_rate_summary">Tempo di registrazione del display</string>
+        <string-array name="setting_fft_rate_list_titles">
+            <item>1024</item>
+            <item>1764</item>
+            <item>2048</item>
+        </string-array>
+        <string-array name="setting_fft_rate_list_values">
+            <item>1024</item>
+            <item>1764</item>
+            <item>2048</item>
+        </string-array>
+
+        <string name="setting_window_title">*Window FFT</string>
+        <string name="setting_window_summary">Tempo di registrazione del display</string>
+        <string-array name="setting_window_list_titles">
+            <item>None</item>
+            <item>Hanning</item>
+            <item>Other</item>
+        </string-array>
+        <string-array name="setting_window_list_values">
+            <item>None</item>
+            <item>Hanning</item>
+            <item>Other</item>
+        </string-array>
+
+        <string name="setting_constant_title">*Time constant</string>
+        <string name="setting_constant_summary">Tempo di registrazione del display</string>
+        <string-array name="setting_constant_list_titles">
+            <item>None</item>
+            <item>Slow</item>
+            <item>Fast</item>
+            <item>Impulse</item>
+        </string-array>
+        <string-array name="setting_constant_list_values">
+            <item>None</item>
+            <item>Slow</item>
+            <item>Fast</item>
+            <item>Impulse</item>
+        </string-array>
+
+
+        <string name="setting_gain_title">Guadagno</string>
+        <string name="setting_gain_summary">The Gain is a positive/negative value in dB, specific for each device, to set in order to measure the correct noise level</string>
+
+        <string name="setting_time_display_title">Tempo di aggiornamento del display</string>
+        <string name="setting_time_display_summary">Tempo di aggiornamento del display</string>
+        <string-array name="setting_time_display_list_titles">
+            <item>1 sec</item>
+            <item>2 sec </item>
+            <item>5 sec</item>
+            <item>30 sec</item>
+            <item>60 sec</item>
+        </string-array>
+        <string-array name="setting_time_display_list_values">
+            <item>1</item>
+            <item>2</item>
+            <item>5</item>
+            <item>30</item>
+            <item>60</item>
+        </string-array>
+
+    <string name="pref_category_log">Log file</string>
+        <string name="setting_time_log_title">Tempo di campionamento sul log file</string>
+        <string name="setting_time_log_summary">Tempo di campionamento sul log file</string>
+        <string-array name="setting_time_log_list_titles">
+            <item>1 sec</item>
+            <item>2 sec </item>
+            <item>5 sec</item>
+            <item>30 sec</item>
+            <item>1 min</item>
+            <item>2 min</item>
+            <item>5 min</item>
+            <item>10 min</item>
+            <item>60 min</item>
+        </string-array>
+        <string-array name="setting_time_log_list_values">
+            <item>1</item>
+            <item>2</item>
+            <item>5</item>
+            <item>30</item>
+            <item>60</item>
+            <item>120</item>
+            <item>300</item>
+            <item>600</item>
+            <item>3600</item>
+        </string-array>
+
+        <string name="setting_spectrum">*Save third octave spectrum</string>
+        <string name="setting_spectrum_summary">.....</string>
+
+        <string name="setting_directory_title">*Where recording</string>
+        <string name="setting_directory_summary">......</string>
+        <string-array name="setting_directory_list_titles">
+            <item>Internal phone memory</item>
+            <item>External SD card memory</item>
+         </string-array>
+        <string-array name="setting_directory_list_values">
+            <item>0</item>
+            <item>1</item>
+         </string-array>
+
+    <string name="pref_category_plot">*PLOTS</string>
+
+    <string name="pref_category_gps">*GPS</string>
+
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="it.piemonte.arpa.openoise">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="it.piemonte.arpa.openoise.MainActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="it.piemonte.arpa.openoise.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="it.piemonte.arpa.openoise.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.piemonte.arpa.openoise.MainActivity" />
+        </activity>
+        <activity
+            android:name="it.piemonte.arpa.openoise.LogFilesListActivity"
+            android:label="@string/title_activity_log_files_list"
+            android:parentActivityName="it.piemonte.arpa.openoise.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.piemonte.arpa.openoise.MainActivity" />
+        </activity>
+        <activity
+            android:name="it.piemonte.arpa.openoise.LogFilesReadActivity"
+            android:label="@string/title_activity_log_files_read"
+            android:parentActivityName="it.piemonte.arpa.openoise.LogFilesListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.piemonte.arpa.openoise.LogFilesListActivity" />
+        </activity>
+        <activity android:name="it.piemonte.arpa.openoise.InfoActivity"
+            android:label="@string/title_activity_info">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.piemonte.arpa.openoise.MainActivity" />
+        </activity>
+        <activity android:name="it.piemonte.arpa.openoise.CreditsActivity"
+            android:label="@string/title_activity_credits">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.piemonte.arpa.openoise.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
